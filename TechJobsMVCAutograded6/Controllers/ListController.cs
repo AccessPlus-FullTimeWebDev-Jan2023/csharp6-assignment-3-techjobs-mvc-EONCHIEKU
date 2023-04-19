@@ -54,7 +54,7 @@ public class ListController : Controller
         else
         {
             jobs = JobData.FindByColumnAndValue(column, value);
-            ViewBag.title = $"Jobs with {column}: {value}";
+            ViewBag.title = $"Jobs with {ColumnChoices[column]}: {value}";
             ViewBag.jobs = jobs;
            
         }
